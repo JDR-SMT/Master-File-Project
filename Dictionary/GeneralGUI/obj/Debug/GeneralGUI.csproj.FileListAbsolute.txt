@@ -1,0 +1,10 @@
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\bin\Debug\GeneralGUI.exe.config
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\bin\Debug\GeneralGUI.exe
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\bin\Debug\GeneralGUI.pdb
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\obj\Debug\GeneralGUI.csproj.AssemblyReference.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\obj\Debug\GeneralGUI.Properties.Resources.resources
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\obj\Debug\GeneralGUI.csproj.GenerateResource.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\obj\Debug\GeneralGUI.csproj.CoreCompileInputs.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\obj\Debug\GeneralGUI.exe
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\obj\Debug\GeneralGUI.pdb
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\GeneralGUI\obj\Debug\GeneralGUI.GeneralForm.resources

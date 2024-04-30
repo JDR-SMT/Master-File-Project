@@ -1,0 +1,10 @@
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\bin\Debug\AdminGUI.exe.config
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\bin\Debug\AdminGUI.exe
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\bin\Debug\AdminGUI.pdb
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\obj\Debug\AdminGUI.csproj.AssemblyReference.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\obj\Debug\AdminGUI.AdminForm.resources
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\obj\Debug\AdminGUI.Properties.Resources.resources
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\obj\Debug\AdminGUI.csproj.GenerateResource.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\obj\Debug\AdminGUI.csproj.CoreCompileInputs.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\obj\Debug\AdminGUI.exe
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\Dictionary\AdminGUI\obj\Debug\AdminGUI.pdb
