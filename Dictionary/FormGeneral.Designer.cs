@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.StatusStrip = new System.Windows.Forms.StatusStrip();
+			this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.ListBoxReadOnly = new System.Windows.Forms.ListBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -50,16 +51,26 @@
 			this.label13 = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
+			this.label16 = new System.Windows.Forms.Label();
+			this.label17 = new System.Windows.Forms.Label();
+			this.StatusStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// StatusStrip
 			// 
 			this.StatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-			this.StatusStrip.Location = new System.Drawing.Point(0, 561);
+			this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripStatusLabel});
+			this.StatusStrip.Location = new System.Drawing.Point(0, 581);
 			this.StatusStrip.Name = "StatusStrip";
-			this.StatusStrip.Size = new System.Drawing.Size(662, 22);
+			this.StatusStrip.Size = new System.Drawing.Size(661, 22);
 			this.StatusStrip.TabIndex = 0;
 			this.StatusStrip.Text = "StatusStrip";
+			// 
+			// ToolStripStatusLabel
+			// 
+			this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
+			this.ToolStripStatusLabel.Size = new System.Drawing.Size(0, 18);
 			// 
 			// label1
 			// 
@@ -107,6 +118,8 @@
 			this.TextBoxInputId.Name = "TextBoxInputId";
 			this.TextBoxInputId.Size = new System.Drawing.Size(110, 22);
 			this.TextBoxInputId.TabIndex = 0;
+			this.TextBoxInputId.TextChanged += new System.EventHandler(this.TextBoxInputId_TextChanged);
+			this.TextBoxInputId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxInputId_KeyPress);
 			// 
 			// TextBoxInputName
 			// 
@@ -114,6 +127,8 @@
 			this.TextBoxInputName.Name = "TextBoxInputName";
 			this.TextBoxInputName.Size = new System.Drawing.Size(170, 22);
 			this.TextBoxInputName.TabIndex = 1;
+			this.TextBoxInputName.TextChanged += new System.EventHandler(this.TextBoxInputName_TextChanged);
+			this.TextBoxInputName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxInputName_KeyPress);
 			// 
 			// label4
 			// 
@@ -130,9 +145,9 @@
 			this.ListBoxFiltered.ItemHeight = 16;
 			this.ListBoxFiltered.Location = new System.Drawing.Point(340, 180);
 			this.ListBoxFiltered.Name = "ListBoxFiltered";
-			this.ListBoxFiltered.SelectionMode = System.Windows.Forms.SelectionMode.None;
 			this.ListBoxFiltered.Size = new System.Drawing.Size(300, 260);
 			this.ListBoxFiltered.TabIndex = 2;
+			this.ListBoxFiltered.SelectedIndexChanged += new System.EventHandler(this.ListBoxFiltered_SelectedIndexChanged);
 			// 
 			// label5
 			// 
@@ -146,7 +161,7 @@
 			// 
 			// TextBoxOutputName
 			// 
-			this.TextBoxOutputName.Location = new System.Drawing.Point(470, 520);
+			this.TextBoxOutputName.Location = new System.Drawing.Point(470, 510);
 			this.TextBoxOutputName.Name = "TextBoxOutputName";
 			this.TextBoxOutputName.Size = new System.Drawing.Size(170, 22);
 			this.TextBoxOutputName.TabIndex = 14;
@@ -155,7 +170,7 @@
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(470, 500);
+			this.label6.Location = new System.Drawing.Point(470, 490);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(73, 16);
 			this.label6.TabIndex = 13;
@@ -163,7 +178,7 @@
 			// 
 			// TextBoxOutputId
 			// 
-			this.TextBoxOutputId.Location = new System.Drawing.Point(340, 520);
+			this.TextBoxOutputId.Location = new System.Drawing.Point(340, 510);
 			this.TextBoxOutputId.Name = "TextBoxOutputId";
 			this.TextBoxOutputId.Size = new System.Drawing.Size(110, 22);
 			this.TextBoxOutputId.TabIndex = 12;
@@ -172,7 +187,7 @@
 			// label7
 			// 
 			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(340, 500);
+			this.label7.Location = new System.Drawing.Point(340, 490);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(49, 16);
 			this.label7.TabIndex = 11;
@@ -182,7 +197,7 @@
 			// 
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.Location = new System.Drawing.Point(340, 470);
+			this.label8.Location = new System.Drawing.Point(340, 460);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(199, 20);
 			this.label8.TabIndex = 10;
@@ -252,12 +267,32 @@
 			this.label15.TabIndex = 19;
 			this.label15.Text = "Search by staff ID";
 			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Location = new System.Drawing.Point(80, 550);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(111, 16);
+			this.label16.TabIndex = 23;
+			this.label16.Text = "Close application";
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Location = new System.Drawing.Point(20, 550);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(42, 16);
+			this.label17.TabIndex = 22;
+			this.label17.Text = "Alt + L";
+			// 
 			// FormGeneral
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(662, 583);
+			this.ClientSize = new System.Drawing.Size(661, 603);
 			this.ControlBox = false;
+			this.Controls.Add(this.label16);
+			this.Controls.Add(this.label17);
 			this.Controls.Add(this.label13);
 			this.Controls.Add(this.label14);
 			this.Controls.Add(this.label15);
@@ -281,10 +316,15 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.StatusStrip);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.MaximumSize = new System.Drawing.Size(680, 630);
-			this.MinimumSize = new System.Drawing.Size(680, 630);
+			this.KeyPreview = true;
+			this.MaximumSize = new System.Drawing.Size(679, 650);
+			this.MinimumSize = new System.Drawing.Size(679, 650);
 			this.Name = "FormGeneral";
 			this.Text = "General GUI";
+			this.Load += new System.EventHandler(this.FormGeneral_Load);
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormGeneral_KeyDown);
+			this.StatusStrip.ResumeLayout(false);
+			this.StatusStrip.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -302,9 +342,7 @@
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.ListBox ListBoxFiltered;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox TextBoxOutputName;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox TextBoxOutputId;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label9;
@@ -314,6 +352,11 @@
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel;
+		public System.Windows.Forms.TextBox TextBoxOutputName;
+		public System.Windows.Forms.TextBox TextBoxOutputId;
 	}
 }
 

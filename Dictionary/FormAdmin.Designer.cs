@@ -43,6 +43,8 @@
 			this.label11 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
 			this.StatusStrip = new System.Windows.Forms.StatusStrip();
+			this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+			this.StatusStrip.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -88,6 +90,7 @@
 			this.TextBoxInputName.Name = "TextBoxInputName";
 			this.TextBoxInputName.Size = new System.Drawing.Size(170, 22);
 			this.TextBoxInputName.TabIndex = 0;
+			this.TextBoxInputName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxInputName_KeyPress);
 			// 
 			// label4
 			// 
@@ -167,18 +170,25 @@
 			this.label12.AutoSize = true;
 			this.label12.Location = new System.Drawing.Point(20, 210);
 			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(44, 16);
+			this.label12.Size = new System.Drawing.Size(42, 16);
 			this.label12.TabIndex = 12;
-			this.label12.Text = "Alt + A";
+			this.label12.Text = "Alt + L";
 			// 
 			// StatusStrip
 			// 
 			this.StatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripStatusLabel});
 			this.StatusStrip.Location = new System.Drawing.Point(0, 241);
 			this.StatusStrip.Name = "StatusStrip";
 			this.StatusStrip.Size = new System.Drawing.Size(341, 22);
 			this.StatusStrip.TabIndex = 14;
 			this.StatusStrip.Text = "StatusStrip";
+			// 
+			// ToolStripStatusLabel
+			// 
+			this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
+			this.ToolStripStatusLabel.Size = new System.Drawing.Size(0, 16);
 			// 
 			// FormAdmin
 			// 
@@ -202,10 +212,15 @@
 			this.Controls.Add(this.TextBoxInputId);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.KeyPreview = true;
 			this.MaximumSize = new System.Drawing.Size(359, 310);
 			this.MinimumSize = new System.Drawing.Size(359, 310);
 			this.Name = "FormAdmin";
 			this.Text = "Admin GUI";
+			this.Load += new System.EventHandler(this.FormAdmin_Load);
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormAdmin_KeyDown);
+			this.StatusStrip.ResumeLayout(false);
+			this.StatusStrip.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -228,5 +243,6 @@
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.StatusStrip StatusStrip;
+		private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel;
 	}
 }
