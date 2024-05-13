@@ -62,7 +62,7 @@
 			this.TextBoxInputId.Location = new System.Drawing.Point(20, 70);
 			this.TextBoxInputId.Name = "TextBoxInputId";
 			this.TextBoxInputId.ReadOnly = true;
-			this.TextBoxInputId.Size = new System.Drawing.Size(110, 22);
+			this.TextBoxInputId.Size = new System.Drawing.Size(90, 22);
 			this.TextBoxInputId.TabIndex = 1;
 			this.TextBoxInputId.TabStop = false;
 			// 
@@ -78,7 +78,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(150, 50);
+			this.label3.Location = new System.Drawing.Point(130, 50);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(73, 16);
 			this.label3.TabIndex = 4;
@@ -86,9 +86,9 @@
 			// 
 			// TextBoxInputName
 			// 
-			this.TextBoxInputName.Location = new System.Drawing.Point(150, 70);
+			this.TextBoxInputName.Location = new System.Drawing.Point(130, 70);
 			this.TextBoxInputName.Name = "TextBoxInputName";
-			this.TextBoxInputName.Size = new System.Drawing.Size(170, 22);
+			this.TextBoxInputName.Size = new System.Drawing.Size(190, 22);
 			this.TextBoxInputName.TabIndex = 0;
 			this.TextBoxInputName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxInputName_KeyPress);
 			// 
@@ -217,7 +217,6 @@
 			this.MinimumSize = new System.Drawing.Size(359, 310);
 			this.Name = "FormAdmin";
 			this.Text = "Admin GUI";
-			this.Load += new System.EventHandler(this.FormAdmin_Load);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormAdmin_KeyDown);
 			this.StatusStrip.ResumeLayout(false);
 			this.StatusStrip.PerformLayout();

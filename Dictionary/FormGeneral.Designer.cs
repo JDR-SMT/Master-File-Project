@@ -70,7 +70,7 @@
 			// ToolStripStatusLabel
 			// 
 			this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
-			this.ToolStripStatusLabel.Size = new System.Drawing.Size(0, 18);
+			this.ToolStripStatusLabel.Size = new System.Drawing.Size(0, 16);
 			// 
 			// label1
 			// 
@@ -116,16 +116,16 @@
 			// 
 			this.TextBoxInputId.Location = new System.Drawing.Point(340, 100);
 			this.TextBoxInputId.Name = "TextBoxInputId";
-			this.TextBoxInputId.Size = new System.Drawing.Size(110, 22);
+			this.TextBoxInputId.Size = new System.Drawing.Size(90, 22);
 			this.TextBoxInputId.TabIndex = 0;
 			this.TextBoxInputId.TextChanged += new System.EventHandler(this.TextBoxInputId_TextChanged);
 			this.TextBoxInputId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxInputId_KeyPress);
 			// 
 			// TextBoxInputName
 			// 
-			this.TextBoxInputName.Location = new System.Drawing.Point(470, 100);
+			this.TextBoxInputName.Location = new System.Drawing.Point(450, 100);
 			this.TextBoxInputName.Name = "TextBoxInputName";
-			this.TextBoxInputName.Size = new System.Drawing.Size(170, 22);
+			this.TextBoxInputName.Size = new System.Drawing.Size(190, 22);
 			this.TextBoxInputName.TabIndex = 1;
 			this.TextBoxInputName.TextChanged += new System.EventHandler(this.TextBoxInputName_TextChanged);
 			this.TextBoxInputName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxInputName_KeyPress);
@@ -133,7 +133,7 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(470, 80);
+			this.label4.Location = new System.Drawing.Point(450, 80);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(73, 16);
 			this.label4.TabIndex = 6;
@@ -161,16 +161,16 @@
 			// 
 			// TextBoxOutputName
 			// 
-			this.TextBoxOutputName.Location = new System.Drawing.Point(470, 510);
+			this.TextBoxOutputName.Location = new System.Drawing.Point(450, 510);
 			this.TextBoxOutputName.Name = "TextBoxOutputName";
-			this.TextBoxOutputName.Size = new System.Drawing.Size(170, 22);
+			this.TextBoxOutputName.Size = new System.Drawing.Size(190, 22);
 			this.TextBoxOutputName.TabIndex = 14;
 			this.TextBoxOutputName.TabStop = false;
 			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(470, 490);
+			this.label6.Location = new System.Drawing.Point(450, 490);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(73, 16);
 			this.label6.TabIndex = 13;
@@ -180,7 +180,7 @@
 			// 
 			this.TextBoxOutputId.Location = new System.Drawing.Point(340, 510);
 			this.TextBoxOutputId.Name = "TextBoxOutputId";
-			this.TextBoxOutputId.Size = new System.Drawing.Size(110, 22);
+			this.TextBoxOutputId.Size = new System.Drawing.Size(90, 22);
 			this.TextBoxOutputId.TabIndex = 12;
 			this.TextBoxOutputId.TabStop = false;
 			// 
