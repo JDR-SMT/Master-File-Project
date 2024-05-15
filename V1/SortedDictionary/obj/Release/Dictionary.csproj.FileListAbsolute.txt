@@ -1,0 +1,11 @@
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\bin\Release\Dictionary.exe.config
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\bin\Release\Dictionary.exe
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\bin\Release\Dictionary.pdb
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.csproj.AssemblyReference.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.FormAdmin.resources
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.FormGeneral.resources
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.Properties.Resources.resources
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.csproj.GenerateResource.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.csproj.CoreCompileInputs.cache
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.exe
+C:\- Obi\OneDrive\Code\VS\MasterFileProject\V1\SortedDictionary\obj\Release\Dictionary.pdb
