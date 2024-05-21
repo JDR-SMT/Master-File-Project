@@ -67,12 +67,8 @@ namespace Dictionary
 						// assign fields on current line to string array
 						string[] fields = reader.ReadLine().Split(',');
 
-						// if fields are not null or white space
-						if (!string.IsNullOrWhiteSpace(fields[0]) || !string.IsNullOrWhiteSpace(fields[1]))
-						{
-							// add fields to dictionary
-							MasterFile.Add(int.Parse(fields[0]), fields[1]);
-						}
+						// add fields to dictionary
+						MasterFile.Add(int.Parse(fields[0]), fields[1]);
 					}
 				}
 			}
@@ -149,17 +145,26 @@ namespace Dictionary
 		{
 			if (e.KeyChar == (char)Keys.Enter)
 			{
-				string[] record = ListBoxFilter.SelectedItem.ToString().Split();
-
-				if (record.Length == 3)
+				// if no record is selected
+				if (ListBoxFilter.SelectedItem == null)
 				{
-					TextBoxId.Text = record[0];
-					TextBoxName.Text = $"{record[1]} {record[2]}";
+					ToolStripStatusLabel.Text = "Please select a record before pressing enter.";
 				}
+				// if a record is selected
 				else
 				{
-					TextBoxId.Text = record[0];
-					TextBoxName.Text = $"{record[1]}";
+					string[] record = ListBoxFilter.SelectedItem.ToString().Split();
+
+					if (record.Length == 3)
+					{
+						TextBoxId.Text = record[0];
+						TextBoxName.Text = $"{record[1]} {record[2]}";
+					}
+					else
+					{
+						TextBoxId.Text = record[0];
+						TextBoxName.Text = $"{record[1]}";
+					}
 				}
 			}
 		}

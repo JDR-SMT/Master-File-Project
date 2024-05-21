@@ -11,7 +11,7 @@ namespace Dictionary
 		{
 			InitializeComponent();
 			Cursor.Hide();
-			DisplayTextBoxes($"{UniqueId()}", null);
+			DisplayTextBoxes(UniqueId());
 		}
 
 		// display passed id and name
@@ -28,16 +28,22 @@ namespace Dictionary
 			// create a new user
 			if (e.Alt && e.KeyCode == Keys.C)
 			{
-				// if name is null or empty
-				if (string.IsNullOrEmpty(TextBoxName.Text))
+				// if key exists
+				if (FormGeneral.MasterFile.ContainsKey(int.Parse(TextBoxId.Text)))
 				{
-					ToolStripStatusLabel.Text = "User was not added. Please enter a name.";
+					ToolStripStatusLabel.Text = "User already exists.";
+				}
+				// if name is null or empty
+				else if (string.IsNullOrEmpty(TextBoxName.Text))
+				{
+					ToolStripStatusLabel.Text = "Please enter a name.";
 				}
 				// if name has been entered
 				else
 				{
 					Create(TextBoxName.Text);
-					ToolStripStatusLabel.Text = "User added.";
+					Save("MalinStaffNames.csv");
+					Close();
 				}
 			}
 			// update an existing user
@@ -46,13 +52,14 @@ namespace Dictionary
 				// if key does not exist
 				if (!FormGeneral.MasterFile.ContainsKey(int.Parse(TextBoxId.Text)))
 				{
-					ToolStripStatusLabel.Text = "User was not deleted. Please enter an existing ID.";
+					ToolStripStatusLabel.Text = "User could not be found.";
 				}
 				// if key exists
 				else
 				{
 					Update(int.Parse(TextBoxId.Text), TextBoxName.Text);
-					ToolStripStatusLabel.Text = "User updated.";
+					Save("MalinStaffNames.csv");
+					Close();
 				}
 			}
 			// delete an existing user
@@ -61,20 +68,19 @@ namespace Dictionary
 				// if key does not exist
 				if (!FormGeneral.MasterFile.ContainsKey(int.Parse(TextBoxId.Text)))
 				{
-					ToolStripStatusLabel.Text = "User was not deleted. Please enter an existing ID.";
+					ToolStripStatusLabel.Text = "User could not be found.";
 				}
 				// if key exists
 				else
 				{
 					Delete(int.Parse(TextBoxId.Text));
-					Clear();
-					ToolStripStatusLabel.Text = "User deleted.";
+					Save("MalinStaffNames.csv");
+					Close();
 				}
 			}
 			// 5.7.	Create a method that will close the Admin GUI when the Alt + L keys are pressed.
 			else if (e.Alt && e.KeyCode == Keys.L)
 			{
-				Save("MalinStaffNames.csv");
 				Close();
 			}
 		}
@@ -154,19 +160,17 @@ namespace Dictionary
 
 		#region TextBox Display & KeyPress
 		// 5.2.	Create a method that will receive the Staff ID from the General GUI and then populate text boxes with the related data. 
-		private void DisplayTextBoxes(string id, string name)
+		private void DisplayTextBoxes(int id)
 		{
 			// if a new id is generated
-			if (string.IsNullOrEmpty(name))
-			{
-				TextBoxId.Text = id;
-			}
+			TextBoxId.Text = id.ToString();
+		}
+
+		private void DisplayTextBoxes(string id, string name)
+		{
 			// if id and name are passed
-			else
-			{
-				TextBoxId.Text = id;
-				TextBoxName.Text = name;
-			}
+			TextBoxId.Text = id;
+			TextBoxName.Text = name;
 		}
 
 		private void TextBoxName_KeyPress(object sender, KeyPressEventArgs e)
@@ -188,15 +192,6 @@ namespace Dictionary
 			{
 				e.Handled = true;
 			}
-		}
-		#endregion
-
-		#region Clear
-		// 5.5.	Clear the text boxes.
-		private void Clear()
-		{
-			TextBoxId.Clear();
-			TextBoxName.Clear();
 		}
 		#endregion
 	}

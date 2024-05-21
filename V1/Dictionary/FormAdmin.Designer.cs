@@ -179,16 +179,16 @@
 			this.StatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripStatusLabel});
-			this.StatusStrip.Location = new System.Drawing.Point(0, 241);
+			this.StatusStrip.Location = new System.Drawing.Point(0, 239);
 			this.StatusStrip.Name = "StatusStrip";
-			this.StatusStrip.Size = new System.Drawing.Size(341, 22);
+			this.StatusStrip.Size = new System.Drawing.Size(341, 24);
 			this.StatusStrip.TabIndex = 14;
-			this.StatusStrip.Text = "StatusStrip";
+			this.StatusStrip.Text = "statusStrip1";
 			// 
 			// ToolStripStatusLabel
 			// 
 			this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
-			this.ToolStripStatusLabel.Size = new System.Drawing.Size(0, 16);
+			this.ToolStripStatusLabel.Size = new System.Drawing.Size(0, 18);
 			// 
 			// FormAdmin
 			// 

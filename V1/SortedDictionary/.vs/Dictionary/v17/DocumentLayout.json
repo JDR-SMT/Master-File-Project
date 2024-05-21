@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|c:\\- obi\\onedrive\\code\\vs\\masterfileproject\\v1\\sorteddictionary\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|solutionrelative:formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\formgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|c:\\- obi\\onedrive\\code\\vs\\masterfileproject\\v1\\sorteddictionary\\formgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|solutionrelative:formgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|solutionrelative:formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\formgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|solutionrelative:formgeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7F51FA9-0FC3-4E65-A3E9-1901C0B9CF40}|Dictionary.csproj|solutionrelative:formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormGeneral.cs [Design]",
-              "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\FormGeneral.cs",
-              "RelativeDocumentMoniker": "FormGeneral.cs",
-              "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\Dictionary\\FormGeneral.cs [Design]",
-              "RelativeToolTip": "..\\..\\Dictionary\\FormGeneral.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T12:13:17.527Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "FormAdmin.cs",
-              "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\FormAdmin.cs [Design]",
-              "RelativeToolTip": "FormAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T12:14:54.284Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormGeneral.cs",
               "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\FormGeneral.cs",
               "RelativeDocumentMoniker": "FormGeneral.cs",
               "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\FormGeneral.cs",
               "RelativeToolTip": "FormGeneral.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T12:18:09.124Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormAdmin.cs",
               "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\FormAdmin.cs",
               "RelativeDocumentMoniker": "FormAdmin.cs",
               "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MasterFileProject\\V1\\SortedDictionary\\FormAdmin.cs",
               "RelativeToolTip": "FormAdmin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T12:18:01.431Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
