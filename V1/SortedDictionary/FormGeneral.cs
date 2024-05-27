@@ -195,7 +195,6 @@ namespace Dictionary
 
 			// when admin is closed
 			Clear();
-			Open("MalinStaffNames.csv");
 			DisplayListBoxRecords();
 		}
 		#endregion
